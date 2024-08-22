@@ -1,43 +1,45 @@
- package com.corndel.pixmate.exercises;
- import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+package com.corndel.pixmate.exercises;
+
+import static com.corndel.pixmate.exercises.Exercise1a.addEven;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 
 public class Test1A {
 
-  //should return 20 for n=8
+  // should return 20 for n=8
   @Test
-  void testName() {
+  void eight() {
     assertEquals(addEven(8), 20);
   }
 
-  //should return 0 for n=1
+  // should return 0 for n=1
   @Test
-  void testName() {
+  void one() {
     assertEquals(addEven(1), 0);
   }
 
-  //should handle a large number
+  // should handle a large number
   @Test
-  void testName() {
+  void big() {
     assertEquals(addEven(100), 2550);
   }
 
-  //should return 2 for n=2
+  // should return 2 for n=2
   @Test
-  void testName() {
+  void two() {
     assertEquals(addEven(2), 2);
   }
 
-  //should handle odd numbers
+  // should handle odd numbers
   @Test
-  void testName() {
-    assertEquals(addEven(7), 12) // 2 + 4 + 6 = 12
+  void odd() {
+    assertEquals(addEven(7), 12); // 2 + 4 + 6 = 12
   }
 
-  //should handle even numbers
+  // should handle even numbers
   @Test
-  void testName() {
-    assertEquals(addEven(10), 30) // 2 + 4 + 6 + 8 + 10 = 30
+  void even() {
+    assertEquals(addEven(10), 30); // 2 + 4 + 6 + 8 + 10 = 30
   }
 }

@@ -1,43 +1,44 @@
- package com.corndel.pixmate.exercises;
- import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+package com.corndel.pixmate.exercises;
+
+import static com.corndel.pixmate.exercises.Exercise1b.sumArray;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.stream.IntStream;
 import org.junit.jupiter.api.Test;
 
 public class Test1B {
 
-  //should return the sum of all numbers in an array
+  // should return the sum of all numbers in an array
   @Test
-  void testName() {
+  void sum() {
     assertEquals(sumArray(new int[] {1, 2, 3, 4, 5}), 15);
     assertEquals(sumArray(new int[] {10, -2, 3}), 11);
   }
 
-  //should return 0 for an empty array
+  // should return 0 for an empty array
   @Test
-  void testName() {
+  void empty() {
     assertEquals(sumArray(new int[] {}), 0);
   }
 
-  //should handle arrays with negative numbers
+  // should handle arrays with negative numbers
   @Test
-  void testName() {
+  void negative() {
     assertEquals(sumArray(new int[] {-1, -2, -3, -4, -5}), -15);
   }
 
-  //should return the number itself for single-element arrays
+  // should return the number itself for single-element arrays
   @Test
-  void testName() {
+  void single() {
     assertEquals(sumArray(new int[] {5}), 5);
     assertEquals(sumArray(new int[] {-10}), -10);
   }
 
-  //should handle large arrays
+  // should handle large arrays
   @Test
-  void testName() {
-    var largeArray = Array.from({ length: 100 }, (_, i) => i + 1);
-    var expectedSum = largeArray.reduce((a, b) => a + b, 0);
+  void big() {
+    var largeArray = IntStream.range(1, 101).toArray();
+    var expectedSum = 5050;
     assertEquals(sumArray(largeArray), expectedSum);
   }
-
-  // Add more test cases as needed
 }
