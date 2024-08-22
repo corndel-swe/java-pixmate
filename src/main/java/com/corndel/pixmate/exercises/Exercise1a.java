@@ -13,13 +13,6 @@ public class Exercise1a {
    */
   public static int addEven(int n) {
     // TODO
-    // return 0;
-
-    // TODO REMOVE
-    int sum = 0; // initialize sum to 0
-    for (int i = 2; i <= n; i += 2) { // loop from 2 to n, incrementing by 2 each time
-      sum += i; // add the current even number to the sum
-    }
-    return sum;
+    return 0;
   }
 }

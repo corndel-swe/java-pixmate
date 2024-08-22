@@ -8,18 +8,12 @@ public class Exercise2b {
    *
    * @example // returns 3 stepDown([10, 12, 15, 14, 16, 20])
    * @example // returns -1 (no element is smaller than its predecessor) stepDown([5, 10, 15, 20])
-   * @param {number[]} numbers - An array of numbers to be examined.
-   * @returns {number} The index of the first element that is smaller than its predecessor. Returns
-   *     -1 if no such element is found or if the array is empty.
+   * @param {int[]} numbers - An array of numbers to be examined.
+   * @returns {int} The index of the first element that is smaller than its predecessor. Returns -1
+   *     if no such element is found or if the array is empty.
    */
   public static int stepDown(int[] numbers) {
-    // // TODO
-    // return -1;
-    for (int i = 1; i < numbers.length; i++) {
-      if (numbers[i] < numbers[i - 1]) {
-        return i;
-      }
-    }
+    // TODO
     return -1;
   }
 }

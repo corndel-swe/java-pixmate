@@ -12,21 +12,7 @@ public class Exercise2a {
    * @returns {int} The sum of numbers that meet the criteria.
    */
   public static int sumSelective(int[] numbers) {
-    // // TODO
-    // return 0;
-
-    int sum = 0;
-
-    for (int num : numbers) {
-      if ((num % 2 == 0) && (num > 10)) {
-        continue;
-      }
-
-      if ((num % 2 == 0) || (num > 10)) {
-        sum += num;
-      }
-    }
-
-    return sum;
+    // TODO
+    return 0;
   }
 }

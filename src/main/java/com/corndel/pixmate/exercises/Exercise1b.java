@@ -7,18 +7,11 @@ public class Exercise1b {
    * Adds together all the numbers in the array
    *
    * @example // returns 11 sumArray([1, 3, 7])
-   * @param {number[]} arr - An array of numbers
-   * @returns {number} The sum of the array
+   * @param {int[]} arr - An array of numbers
+   * @returns {int} The sum of the array
    */
   public static int sumArray(int[] arr) {
     // TODO
-    // return 0;
-
-    // TODO remove
-    int sum = 0;
-    for (int num : arr) {
-      sum += num;
-    }
-    return sum;
+    return 0;
   }
 }
