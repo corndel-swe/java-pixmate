@@ -74,8 +74,8 @@ in the terminal.
 >
 > You can choose which test to run using the `-Dtest=` parameter. E.g. Runnning
 >
-> ```bash ./mvnw test -Dtest=Exercise1aTest
->
+> ```bash
+> ./mvnw test -Dtest=Exercise1aTest
 > ```
 >
 > in the terminal will test only the `Exercise1a.java` code using the
