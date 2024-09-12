@@ -6,18 +6,31 @@ Great work on the deep dive. Now let's make some art!
 
 ### Necklace
 
-1. Run `node drawings/necklace.js` and behold the beauty!
+1. Run `Necklace.java` and behold the beauty!
 
-1. Take a look at `necklace.js` to figure out what is going on.
+   You can do this either by clicking the `Run` button above the `main()` method
+   in `Necklace.java`
 
-1. Copy the code into a new `.js` file and hack around to make some different
+   <p align="center">
+    <img src="assets/image-1.png" width="200px"></img>
+   </p>
+
+   or in the terminal by running
+
+   ```bash
+   ./mvnw -q exec:java -Dexec.mainClass="com.corndel.pixmate.drawings.Necklace"
+   ```
+
+1. Take a look at `Necklace.java` to figure out what is going on.
+
+1. Copy the code into a new `.java` file and hack around to make some different
    patterns. Have fun!
 
 ### Rectangle
 
-1. Run `node drawings/rectangle.js` and marvel at the wonder!
+1. Run `Rectangle.java` and marvel at the wonder!
 
-1. Take a look a `rectangle.js` and hack around to see how it works.
+1. Take a look a `Rectangle.java` and hack around to see how it works.
 
 1. If you make something interesting, save it in a new file!
 
@@ -25,8 +38,8 @@ To make a 2D shape, you are using something called a "nested loop" - that is a
 loop inside a loop. The outer loop iterates through the rows, and the inner loop
 iterates through each row itself.
 
-Could you make `rectangle.js` into a function which accepts `width` and `height`
-to make it more versatile?
+Could you make `Rectangle.java` into a function which accepts `width` and
+`height` to make it more versatile?
 
 ### Triangle
 
@@ -40,7 +53,7 @@ Can you draw this?
 *****
 ```
 
-Can you make it a function with the number of rows as a paramter?
+Can you make it a function with the number of rows as a parameter?
 
 ### Inverted triangle
 
@@ -113,26 +126,27 @@ colour, pattern, functions, conditions... there are no rules.
 
 ## Animate
 
-We've provided a function `animate(frames, interval)` which accepts an array of
-strings. It will print each frame with `interval` seconds in-between.
+We've provided a class called `Animator` which accepts an array of strings. It
+will print each frame with `interval` seconds in-between.
 
 ### Loading
 
-Have a look at `animations/loading.js` to see how `animate` can be used.
+Have a look at `animations/Loading.java` to see how `Animator.animate` can be
+used.
 
-We use a loop to build up a string and push it into an array of `frames`. We
-pass this array to `animate` with the desired interval.
+We use a loop to build up a string and push it into a list of `frames`. We pass
+this array to `animate` with the desired interval.
 
-Copy the code into a new file. Here are some things to try:
+Here are some things to try:
 
-- make it into a function to adjust the length of the loading bar
-- add some colour!
+- make `Loading` into a function to adjust the length of the loading bar
+- add some colour with `Chalk`!
 - add a message to each frame saying the current % completion
 
 ### More animations
 
-Go ahead and make any more animations you like. Feel free to copy `animate.js`
-and hack it to change the animation behaviour if you like.
+Go ahead and make any more animations you like. Feel free to copy
+`Animator.java` and hack it to change the animation behaviour if you like.
 
 Some ideas:
 

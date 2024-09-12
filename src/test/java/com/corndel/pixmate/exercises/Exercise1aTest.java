@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class Test1A {
+public class Exercise1aTest {
 
   // should return 20 for n=8
   @Test

@@ -1,7 +1,7 @@
 package com.corndel.pixmate.exercises;
 
 public class Exercise1b {
-  // https://tech-docs.corndel.com/java/for-of-loops.html
+  // https://tech-docs.corndel.com/java/for-each-loops.html
 
   /**
    * Adds together all the numbers in the array
