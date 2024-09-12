@@ -70,18 +70,16 @@ command
 
 in the terminal.
 
-::: tip
-
-You can choose which test to run using the `-Dtest=` parameter. E.g. Runnning
-
-```bash
-./mvnw test -Dtest=Exercise1aTest
-```
-
-in the terminal will test only the `Exercise1a.java` code using the
-`Exercise1aTest.java` test file.
-
-:::
+> [!TIP]
+>
+> You can choose which test to run using the `-Dtest=` parameter. E.g. Runnning
+>
+> ```bash ./mvnw test -Dtest=Exercise1aTest
+>
+> ```
+>
+> in the terminal will test only the `Exercise1a.java` code using the
+> `Exercise1aTest.java` test file.
 
 ## Deep dive
 
