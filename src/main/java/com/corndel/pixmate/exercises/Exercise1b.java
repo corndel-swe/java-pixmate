@@ -1,14 +1,18 @@
 package com.corndel.pixmate.exercises;
 
+/**
+ * @see <a href="https://tech-docs.corndel.com/java/for-each-loops.html">For-Each Loops in Java</a>
+ */
 public class Exercise1b {
-  // https://tech-docs.corndel.com/java/for-each-loops.html
 
   /**
-   * Adds together all the numbers in the array
-   *
-   * @example // returns 11 sumArray([1, 3, 7])
-   * @param {int[]} arr - An array of numbers
-   * @returns {int} The sum of the array
+   * Adds together all the numbers in the array.
+   * <p>
+   * For example, if the input array is [1, 3, 7], the method returns 11.
+   * </p>
+   * 
+   * @param arr an array of numbers
+   * @return the sum of the array
    */
   public static int sumArray(int[] arr) {
     // TODO
